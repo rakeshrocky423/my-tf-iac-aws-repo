@@ -36,12 +36,12 @@ resource "aws_security_group" "my_security_group" {
 
 # Create AWS ec2 instance
 resource "aws_instance" "myFirstInstance" {
-  ami           = var.ami_id
-  key_name = var.key_name
-  instance_type = var.instance_type
-  security_groups= [var.security_group]
+  ami           = ami-0ad21ae1d0696ad58
+  key_name = terraform
+  instance_type = t2 -micro
+  security_groups= [sg-000f2df64cc6be8b8]
   tags= {
-    Name = var.tag_name
+    Name =terraform-aws 
   }
 }
 

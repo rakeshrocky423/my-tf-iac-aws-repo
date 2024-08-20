@@ -40,7 +40,7 @@ resource "aws_instance" "myFirstInstance" {
   key_name      = "terraform"              # Key names must be in quotes
   instance_type = "t2.micro"               # Instance types must be in quotes
 
-  vpc_security_group_ids = [aws_security_group.my_security_group.id]  # Reference security group by ID
+  vpc_security_group_ids = [sg-000f2df64cc6be8b8]  # Reference security group by ID
 
   tags = {
     Name = "myFirstInstance"  # Tags must be in quotes

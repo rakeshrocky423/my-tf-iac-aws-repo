@@ -41,7 +41,7 @@ resource "aws_instance" "myFirstInstance" {
   instance_type = t2 -micro
   security_groups= [sg-000f2df64cc6be8b8]
   tags= {
-    Name =terraform-aws 
+    Name = myFirstInstance
   }
 }
 
